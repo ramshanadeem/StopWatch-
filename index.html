@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+</head>
+
+<style>
+ body{
+       height: 100%;
+  display: flex;
+       justify-content: center;
+       align-items: center;
+       
+   } 
+   .stopwatch{
+       font-size: 10em;
+       font-family: monospace;
+       background-color: whitesmoke;
+       color: rebeccapurple;
+       border-radius: 5px;
+       padding: 10px;
+   }
+   .container{
+       box-shadow: 0 1px 4px black;
+       padding: 15px;
+       border-radius: 5px;
+       background-color: rebeccapurple;
+   }
+   .controls{
+       display: flex;
+       margin: 10px -5px 0;
+   }
+   .controls button{
+       flex: 1;
+       margin: 0 5px;
+       border: none;
+       font-size: 20px;
+       padding: 5px;
+       border-radius: 5px;
+       box-shadow:  0 1px 4px black;
+       font-weight: bold;
+       color: rebeccapurple;
+       background-color: whitesmoke;
+
+   }
+   .controls button:hover{
+       color: whitesmoke;
+       background-color:darkmagenta;
+   }
+</style>
+
+<body>
+    
+       
+    
+   
+    <div class="container">
+        <h1 style="text-align: center; color: whitesmoke;">STOP WATCH</h1>
+    <div class="stopwatch">00:00:00</div>
+    <div class="controls" >
+ 
+        <button onclick="start()">Start</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="restart()">Restart</button>
+    </div>
+</div>
+</body>
+
+<script src="app.js"></script>
+
+
+</html>
